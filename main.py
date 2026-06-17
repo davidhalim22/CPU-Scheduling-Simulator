@@ -11,7 +11,7 @@ from algorithms.round_robin import round_robin
 
 processes = case_1()  # Change this to case_2() or case_3() for different test cases
 
-result,gantt = fcfs(processes)
+result,gantt = sjf(processes)
 
 for p in result:
   print(p.pid, p.waiting_time, p.turnaround_time)
@@ -23,7 +23,7 @@ Average Waiting Time: {avg_wt, 2}
 Average Turnaround Time: {avg_tat, 2}
 """)
 
-draw_gantt(gantt)
+# draw_gantt(gantt)
 
 
-# run_gui()
+run_gui()
