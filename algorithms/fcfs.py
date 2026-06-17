@@ -18,4 +18,4 @@ def fcfs(processes):
         
         gantt.append((p.pid, start_time, end_time))
         
-    return gantt, processes
+    return processes, gantt

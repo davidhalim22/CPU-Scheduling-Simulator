@@ -13,15 +13,17 @@ processes = case_1()  # Change this to case_2() or case_3() for different test c
 
 result,gantt = fcfs(processes)
 
+for p in result:
+  print(p.pid, p.waiting_time, p.turnaround_time)
 
+avg_wt, avg_tat = calculate_averages(result)
 
+print(f"""
+Average Waiting Time: {avg_wt, 2}
+Average Turnaround Time: {avg_tat, 2}
+""")
 
-
-
-
-
-
-
+draw_gantt(gantt)
 
 
 # run_gui()

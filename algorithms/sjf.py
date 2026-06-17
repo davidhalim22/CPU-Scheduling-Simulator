@@ -28,4 +28,4 @@ def sjf(processes):
         completed.append(selected)
         processes.remove(selected)
     
-    return gantt, completed
+    return completed, gantt
