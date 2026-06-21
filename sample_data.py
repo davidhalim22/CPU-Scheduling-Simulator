@@ -19,8 +19,9 @@ def case_2():
 
 def case_3():
     return [
-        Process("P1", 0, 8, 2),
-        Process("P2", 2, 4, 1),
-        Process("P3", 4, 9, 3),
-        Process("P4", 5, 5, 2)
+        Process("P1", 7, 8, 2),
+        Process("P2", 5, 2, 2),
+        Process("P3", 0, 8, 5),
+        Process("P4", 0, 4, 5),
+        Process("P5", 2, 8, 1)
     ]

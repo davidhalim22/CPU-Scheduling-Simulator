@@ -4,9 +4,9 @@ def fcfs(processes):
     current_time = 0
     gantt = []
     
-    for p in processes:       # Simulate the process execution
+    for p in processes:
         if current_time < p.arrival:
-            current_time = p.arrival  # Wait for the process to arrive
+            current_time = p.arrival
         
         start_time = current_time
         current_time += p.burst
